@@ -731,14 +731,6 @@ a {
   transition-timing-function: var(--transition-timing-function);
 }
 
-.product-border:hover .product-container {
-  opacity: 1;
-}
-
-.product-thumb:hover::before {
-  opacity: 1;
-}
-
 .product-thumb {
   position: relative;
   overflow: hidden;
