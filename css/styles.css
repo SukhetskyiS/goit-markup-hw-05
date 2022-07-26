@@ -15,7 +15,7 @@
 }
 
 body {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   margin: 0 auto;
   /* border: 1px solid black; */
 
@@ -151,15 +151,6 @@ a {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
-
-.site-nav .curent:hover::after {
-  opacity: 1;
 }
 
 /*---------SITE-CONTACT----------*/
@@ -793,9 +784,9 @@ a {
 
   background: rgba(0, 0, 0, 0.2);
 
-  transition-property: opacity;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: linear;
+  transition: visibility var(--transition-duration)
+      var(--transition-timing-function),
+    opacity var(--transition-duration) var(--transition-timing-function);
 }
 
 .backdrop.is-hidden {
